@@ -1,0 +1,66 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: grey;
+}
+
+#app {
+  margin: auto;
+  width: 100vw;
+  max-width: 30rem;
+  padding: 1rem;
+}
+
+#app > canvas {
+  width: calc(100% - 2rem);
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.d-pad {
+  width: 6rem;
+  height: 6rem;
+  margin: auto;
+}
+
+.d-pad > button {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(58, 58, 58);
+  border: none;
+  padding: 0;
+  display: block;
+  float: left;
+  line-height: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.d-pad > button.up,
+.d-pad > button.down {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.d-pad > button.up,
+.d-pad > button.down,
+.d-pad > button.left,
+.d-pad > button.right {
+  cursor: pointer;
+}
+
+button.circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 1.5rem;
+}
